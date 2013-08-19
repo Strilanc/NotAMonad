@@ -30,7 +30,7 @@ public class SquareMatrixTest {
         s1.Span.AssertEquals(1);
         s1.Items[0, 0].AssertEquals("test");
 
-        var s2 = new SquareMatrix<SquareMatrix<int>>(new SquareMatrix<int>[0,0]);
+        var s2 = new SquareMatrix<SquareMatrix<int>>(new SquareMatrix<int>[0,0]).Flatten();
         s2.Span.AssertEquals(0);
 
         var r3 = new SquareMatrix<int>[1,1];
