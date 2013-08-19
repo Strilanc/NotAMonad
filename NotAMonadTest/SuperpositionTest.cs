@@ -18,7 +18,7 @@ public class SuperpositionTest {
             {"hey", BigRational.One/5*3},
             {"you", -BigRational.One/5*4}
         });
-        
+
         TestingUtilities.AssertThrows(() => s.Transform(e => e.Length));
     }
 
@@ -35,7 +35,7 @@ public class SuperpositionTest {
         s.Dictionary[3].AssertEquals((ComplexRational)(BigRational.One / 5 * 3));
         s.Dictionary[6].AssertEquals((ComplexRational)(BigRational.One / 5 * 4));
     }
-    
+
     [TestMethod]
     public void TestFlatten() {
         var s = QuantumSuperPosition.Wrap(QuantumSuperPosition.Wrap("test")).Flatten();
@@ -56,7 +56,7 @@ public class SuperpositionTest {
         }).Flatten();
 
         s2.Dictionary.Count.AssertEquals(4);
-        s2.Dictionary["hey"].AssertEquals(new ComplexRational(BigRational.One/25*9, 0));
+        s2.Dictionary["hey"].AssertEquals(new ComplexRational(BigRational.One / 25 * 9, 0));
         s2.Dictionary["listen"].AssertEquals(new ComplexRational(-BigRational.One / 25 * 12, 0));
         s2.Dictionary["over"].AssertEquals(new ComplexRational(0, BigRational.One / 25 * 12));
         s2.Dictionary["there"].AssertEquals(new ComplexRational(0, -BigRational.One / 25 * 16));
@@ -74,7 +74,7 @@ public class SuperpositionTest {
             {a1, BigRational.One/5*3},
             {a2, BigRational.One/5*4}
         });
-        
+
         TestingUtilities.AssertThrows(() => s2.Flatten());
     }
 }
