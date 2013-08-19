@@ -55,6 +55,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="PrinterTest.cs" />
     <Compile Include="ParserTest.cs" />
     <Compile Include="SuperpositionTest.cs" />
     <Compile Include="ProbabilityDistributionTest.cs" />

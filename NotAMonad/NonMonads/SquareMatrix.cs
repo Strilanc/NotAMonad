@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Numerics;
 
 // NOT a monad
 public sealed class SquareMatrix<T> {

@@ -46,6 +46,7 @@
     <Compile Include="Monads\Parser.cs" />
     <Compile Include="Monads\ProbabilityDistribution.cs" />
     <Compile Include="Monads\List.cs" />
+    <Compile Include="NonMonads\Printer.cs" />
     <Compile Include="NonMonads\SquareMatrix.cs" />
     <Compile Include="NonMonads\QuantumSuperposition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
